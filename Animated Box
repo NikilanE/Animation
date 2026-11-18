@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Animations</title>
+        <style>
+            .box{
+                width:200px;
+                height:200px;
+                background-color: rgba(174, 24, 24, 0.438);
+                animation:move 0.5s infinite alternate;
+            }
+            @keyframes move{
+                from{
+                    transform:translateY(-20px);
+                }
+                to{
+                    transform:translateY(1000px);
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h3>Moving box</h3>
+        <div class="box"></div>
+    </body>
+</html>
